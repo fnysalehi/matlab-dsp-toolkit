@@ -4,9 +4,14 @@ clear all; close all; clc;
 % Add paths
 addpath('../src/filters');
 addpath('../src/analysis');
+addpath('../src/signals');
 
-% Load audio file
-[signal, Fs] = audioread('../data/JohnLennon-Imagine.mp3');
+% Generate test signal (instead of loading copyrighted audio)
+sr = 44100;  % Standard audio sample rate
+frequencies = [440, 880, 1760];  % A4, A5, A6 notes
+duration = 2;  % seconds
+signal = generate_signals(sr, duration, frequencies);
+Fs = sr;
 
 % Design filters
 [lp_filter, hp_filter] = design_filters(Fs, 3000, 20);

@@ -8,8 +8,7 @@ You can use any of the following:
 2. Generated test signals using the `generate_signals.m` function
 3. Download royalty-free samples from:
    - [Free Sound](https://freesound.org/)
-   - [NASA Audio Collection](https://www.nasa.gov/multimedia/audio/)
-   - [BBC Sound Effects](https://sound-effects.bbcrewind.co.uk/) (requires attribution)
+   - [BBC Sound Effects](https://sound-effects.bbcrewind.co.uk/)
 
 ## Example Usage
 ```matlab
